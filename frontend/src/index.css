@@ -2,11 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Optional: Custom global styles */
-body {
-  @apply bg-gray-100 text-gray-900;
+/* Load Satoshi Locally */
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/satoshi/Satoshi-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
 }
 
-.container {
-  @apply mx-auto px-4;
+/* Root Styles */
+@layer base {
+  :root {
+    --primary: #3ecf8e; /* Turquoise */
+    --secondary: rgba(255, 255, 255, 0.1); /* Transwhite */
+    --background: #000000; /* Black */
+    --foreground: #ffffff; /* White */
+  }
+}
+
+/* Custom Tailwind Utilities */
+@layer utilities {
+  .bg-background {
+    background-color: var(--background);
+  }
+  .text-foreground {
+    color: var(--foreground);
+  }
+}
+
+/* Apply Font Globally */
+body {
+  @apply bg-background text-foreground antialiased;
+  font-family: "Satoshi", sans-serif;
+  -webkit-font-smoothing: antialiased; /* Smooths fonts in WebKit-based browsers */
+  -moz-osx-font-smoothing: grayscale; /* Enhances font rendering on macOS */
+  text-rendering: optimizeLegibility; /* Improves kerning and ligatures */
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold text-white; /* Changed to white for better contrast on black */
 }
