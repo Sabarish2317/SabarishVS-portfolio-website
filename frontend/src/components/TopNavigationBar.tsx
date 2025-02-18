@@ -1,37 +1,89 @@
 import React from "react";
-import { Button } from "./ui/moving-border";
 
 const TopNavigationBar: React.FC = () => {
+  // Function to handle link clicks
+  const handleClick = (number: number) => {
+    const links: string[] = [
+      "https://www.linkedin.com/in/sabarish--vs/",
+      "mailto:sabarish_7@protonmail.com",
+      "https://wa.me/+919344461476",
+      "https://github.com/Sabarish2317",
+    ];
+    window.open(links[number], "_blank");
+  };
   return (
-    <div className="top-navigation-bar w-full items-center flex justify-between ">
-      {/* Download CV button */}
-      {/* <button className="download-button bg-primary px-6 py-3.5 rounded-[21px] flex items-center h-[min-content]">
-        <h3 className="text-[#092e33] text-1.8xl font-medium">Download CV</h3>
-      </button> */}
-      <Button
-        borderClassName="bg-slate-800 dark:bg-slate-800"
-        duration={3000}
-        borderRadius="1.3rem"
-        className="bg-[#2d2e309c] dark:bg-[#2d2e309c] px-2 py-2  text-white backdrop-blur-3xl dark:text-white border-[#2d2e309c]
-        dark:border-[#2d2e309c] transition-all duration-300 ease-in-out hover:bg-[#3ecf8ead] hover:h6-text-black active:scale-95 active:bg-[#3ECF8E]"
-      >
-        <h3 className="text-white text-1.8xl font-medium h-[min-content]">
-          Download CV
-        </h3>
-      </Button>
+    <div className="top-navigation-bar w-full items-center flex justify-between sticky top-4 z-50">
+      <div className="logo h-[44px] sm:h-[54px] px-[18px] pointer-events-none py-3.5 backdrop-blur-[35.70px] bg-white/5 rounded-[14px] border-2  border-[#9c07ff]/50 justify-center items-center gap-2.5 inline-flex">
+        <div className="text-white text-2xl text-[clamp(8px,4vw,24px)]  font-normal font-['Gabarito'] leading-relaxed">
+          Portfolio
+        </div>
+        <img
+          className="pointer-events-none transform transition-all duration-300 ease-in-out scale-75 sm:scale-100 "
+          src="/icons/logo.svg"
+          alt="logo"
+        />
+      </div>
+
       {/* Social links row */}
-      <div className="social-link-row flex gap-[21px]">
-        <button className="social-button px-2.5 py-2.5 bg-[#2c2d30] rounded-[21px]">
-          <img className="w-10 h-10" src="/icons/linkedin.png" alt="github" />
+      <div className="social-link-row  gap-[21px] hidden md:flex">
+        {/* resume download button */}
+        <button
+          className="social-button border-2 border-[#9c07ff]/50 backdrop-blur-[35.70px] px-2.5 py-2.5  rounded-[21px]
+        transition-all duration-300 ease-in-out active:bg-white/[0.2]"
+        >
+          <img
+            className="w-10 h-10 pointer-events-none"
+            src="/icons/resume-download.png"
+            alt="github transition-all duration-300 ease-in-out active:bg-white/[0.2]"
+          />
         </button>
-        <button className="social-button px-2.5 py-2.5 bg-[#2c2d30] rounded-[21px]">
-          <img className="w-10 h-10" src="/icons/mail.png" alt="github" />
+        {/* linkedin */}
+        <button
+          onClick={() => handleClick(0)}
+          className="social-button border-2 bg-white/5  border-[#9c07ff]/50 backdrop-blur-[35.70px] px-2.5 py-2.5  rounded-[21px]
+        transition-all duration-300 ease-in-out active:bg-white/[0.2]"
+        >
+          <img
+            className="w-10 h-10 pointer-events-none"
+            src="/icons/linkedin.png"
+            alt="github transition-all duration-300 ease-in-out active:bg-white/[0.2]"
+          />
         </button>
-        <button className="social-button px-2.5 py-2.5 bg-[#2c2d30] rounded-[21px]">
-          <img className="w-10 h-10" src="/icons/wp.png" alt="github" />
+        {/* proton mail */}
+        <button
+          onClick={() => handleClick(1)}
+          className="social-button border-2 bg-white/5 border-[#9c07ff]/50 backdrop-blur-[35.70px] px-2.5 py-2.5 rounded-[21px] 
+        transition-all duration-300 ease-in-out active:bg-white/[0.2]"
+        >
+          <img
+            className="w-10 h-10 pointer-events-none"
+            src="/icons/mail.png"
+            alt="proton mail"
+          />
         </button>
-        <button className="social-button px-2.5 py-2.5 bg-[#2c2d30] rounded-[21px]">
-          <img className="w-10 h-10" src="/icons/github.png" alt="github" />
+        {/* whatsapp */}
+        <button
+          onClick={() => handleClick(2)}
+          className="social-button border-2 bg-white/5 border-[#9c07ff]/50 backdrop-blur-[35.70px] px-2.5 py-2.5 rounded-[21px] 
+        transition-all duration-300 ease-in-out active:bg-white/[0.2]"
+        >
+          <img
+            className="w-10 h-10 pointer-events-none"
+            src="/icons/wp.png"
+            alt="whatsapp"
+          />
+        </button>
+        {/* github */}
+        <button
+          onClick={() => handleClick(3)}
+          className="social-button  border-2 bg-white/5 border-[#9c07ff]/50 backdrop-blur-[35.70px] px-2.5 py-2.5 rounded-[21px] 
+        transition-all duration-300 ease-in-out active:bg-white/[0.2]"
+        >
+          <img
+            className="w-10 h-10 pointer-events-none"
+            src="/icons/github.png"
+            alt="github"
+          />
         </button>
       </div>
     </div>
