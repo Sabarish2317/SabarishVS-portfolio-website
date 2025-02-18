@@ -1,24 +1,63 @@
-# Logs
-logs
-*.log
+# Node.js dependencies
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
 lerna-debug.log*
+.stackdump
+.vscode/
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Editor/IDE settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+.cache/
+.next/
+out/
+coverage/
+public/build/
+
+# React/Vite specific
+*.tsbuildinfo
+.vite/
+.vitepress/cache/
+
+# Express specific
+tmp/
+*.pid
+*.seed
+dump.rdb
+
+# Docker & Deployment
+docker-compose.override.yml
+.dockerignore
+*.pem
+*.crt
+*.key
+
+# OS-specific
+*.DS_Store
+Thumbs.db
