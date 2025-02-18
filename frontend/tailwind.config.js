@@ -10,6 +10,11 @@ module.exports = {
   darkMode: ["class", "class"],
   theme: {
     extend: {
+      fontFamily: {
+        clash: ["Clash Display", "sans-serif"],
+        gabarito: ["Gabarito", "sans-serif"],
+        satoshi: ["Satoshi", "sans-serif"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

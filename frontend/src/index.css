@@ -4,11 +4,24 @@
 
 /* Load Satoshi Locally */
 @font-face {
+  font-family: "Clash Display";
+  src: url("/fonts/ClashDisplay-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gabarito";
+  src: url("/fonts/Gabarito-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Satoshi";
   src: url("/fonts/Satoshi-Variable.woff2") format("woff2");
   font-weight: 100 900;
   font-display: swap;
-  font-style: normal;
 }
 
 /* Root Styles */
@@ -95,6 +108,19 @@ body {
   -webkit-font-smoothing: antialiased; /* Smooths fonts in WebKit-based browsers */
   -moz-osx-font-smoothing: grayscale; /* Enhances font rendering on macOS */
   text-rendering: optimizeLegibility; /* Improves kerning and ligatures */
+}
+/* For Webkit browsers like Chrome and Safari */
+::-webkit-scrollbar {
+  width: 0; /* Hides the scrollbar */
+  height: 0; /* Hides the horizontal scrollbar if needed */
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent; /* Optional: Makes the thumb transparent */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Optional: Makes the track transparent */
 }
 
 /* Headings */
