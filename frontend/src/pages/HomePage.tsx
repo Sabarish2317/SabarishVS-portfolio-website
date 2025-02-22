@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import SubText from "@/components/SubText";
 import TopNavigationBar from "@/components/TopNavigationBar";
 import { CanvasRevealEffectDemo } from "@/components/ui/CanvasRevealDemo";
+import WorksScroller from "@/components/workScroller/WorksScroller";
 import { motion } from "motion/react";
 
 import React from "react";
@@ -37,7 +38,7 @@ const HomePage: React.FC = () => {
       {/*  */}
       {/* main wrapper  */}
       {/*  */}
-      <div className="wrapper z-20 flex flex-col  items-center justify-center py-0 px-6 gap-6 w-full  max-w-[1490px]  ">
+      <div className="wrapper z-20 flex flex-col  items-center justify-center py-0 px-6 gap-6 w-full  max-w-[1490px]  mb-32 ">
         <TopNavigationBar />
         <motion.li
           className="hero-section-animation list-none"
@@ -55,6 +56,7 @@ const HomePage: React.FC = () => {
         <BouncingArrow />
         <SubText />
         <CanvasRevealEffectDemo />
+        <WorksScroller />
       </div>
     </div>
   );
