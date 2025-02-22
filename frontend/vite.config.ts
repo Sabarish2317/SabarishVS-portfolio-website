@@ -4,6 +4,9 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [react()],
+  css: {
+    modules: { generateScopedName: "[name]__[local]___[hash:base64:5]" },
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

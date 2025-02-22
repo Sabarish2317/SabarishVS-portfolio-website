@@ -28,6 +28,7 @@ const SubText: React.FC = () => {
           &
         </span>
         <span className="text-white text-[28px] font-bold font-['Gabarito'] leading-[33.60px]">
+          {" "}
           Deliver
         </span>
       </div>

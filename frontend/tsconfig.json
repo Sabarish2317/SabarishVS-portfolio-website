@@ -6,9 +6,12 @@
   ],
   // new
   "compilerOptions": {
+    // "jsx": "automatic",
+    "useDefineForClassFields": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
+    // "reactCompiler": true
   }
 }

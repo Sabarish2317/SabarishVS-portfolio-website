@@ -5,7 +5,7 @@ const HeroSection: React.FC = () => {
   return (
     <div className="hero-section">
       {/* Section container with extra margin */}
-      <div className="section-container-with-margin mt-2 mb-4 flex-col justify-center items-center gap-6 sm:gap-8 inline-flex px-4 sm:px-8">
+      <div className="section-container-with-margin mt-2  mb-4 flex-col justify-center items-center gap-6 sm:gap-8 inline-flex px-4 sm:px-8">
         {/* Image container */}
         <div className="image-container relative pointer-events-none transform transition-all duration-300 scale-80 sm:scale-80 md:scale-90 lg:scale-100">
           <img
