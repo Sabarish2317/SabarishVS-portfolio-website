@@ -99,8 +99,6 @@
   }
 }
 
-/* Apply Font Globally */
-
 body {
   @apply bg-background text-foreground antialiased;
   font-family: "Satoshi", sans-serif;

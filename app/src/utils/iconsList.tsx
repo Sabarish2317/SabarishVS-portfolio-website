@@ -12,7 +12,7 @@ const Item1: React.FC = () => {
             alt="flutter"
             className="transform scale-75 md:scale-90 lg:scale-100"
           />
-          <div className="text-white/80 text-[clamp(14px,3vw,28px)] font-regular font-['Gabarito']">
+          <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
             Flutter
           </div>
         </div>
@@ -23,7 +23,7 @@ const Item1: React.FC = () => {
             alt="PostgreSQL"
             className="transform scale-75 md:scale-90 lg:scale-100"
           />
-          <div className="text-white/80 text-[clamp(14px,3vw,28px)] font-regular font-['Gabarito']">
+          <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
             PostgreSQL
           </div>
         </div>
@@ -34,7 +34,7 @@ const Item1: React.FC = () => {
             alt="MySQL"
             className="transform scale-75 md:scale-90 lg:scale-100"
           />
-          <div className="text-white/80 text-[clamp(14px,3vw,28px)] font-regular font-['Gabarito']">
+          <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
             MySQL
           </div>
         </div>
@@ -53,9 +53,9 @@ const Item2: React.FC = () => {
           <img
             src="/icons/flutter-icon.svg"
             alt="flutter"
-            className="transform scale-75 md:scale-90 lg:scale-100"
+            className="transform scale-50 md:scale-75 lg:scale-90"  
           />
-          <div className="text-white/80 text-[clamp(14px,3vw,28px)] font-regular font-['Gabarito']">
+          <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
             Flutter
           </div>
         </div>
@@ -64,9 +64,9 @@ const Item2: React.FC = () => {
           <img
             src="/icons/postgresql-icon.svg"
             alt="PostgreSQL"
-            className="transform scale-75 md:scale-90 lg:scale-100"
+            className="transform scale-50 md:scale-75 lg:scale-90"
           />
-          <div className="text-white/80 text-[clamp(14px,3vw,28px)] font-regular font-['Gabarito']">
+          <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
             PostgreSQL
           </div>
         </div>
@@ -75,7 +75,7 @@ const Item2: React.FC = () => {
           <img
             src="/icons/mysql-icon.svg"
             alt="MySQL"
-            className="transform scale-75 md:scale-90 lg:scale-100"
+            className="transform scale-50 md:scale-75 lg:scale-90"
           />
           <div className="text-white/80 text-[clamp(14px,3vw,28px)] font-regular font-['Gabarito']">
             MySQL
@@ -109,7 +109,7 @@ const Item3: React.FC = () => {
             alt="PostgreSQL"
             className="transform scale-75 md:scale-90 lg:scale-100"
           />
-          <div className="text-white/80 text-[clamp(14px,3vw,28px)] font-regular font-['Gabarito']">
+          <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
             PostgreSQL
           </div>
         </div>
@@ -120,7 +120,7 @@ const Item3: React.FC = () => {
             alt="MySQL"
             className="transform scale-75 md:scale-90 lg:scale-100"
           />
-          <div className="text-white/80 text-[clamp(14px,3vw,28px)] font-regular font-['Gabarito']">
+          <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
             MySQL
           </div>
         </div>

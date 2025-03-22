@@ -48,30 +48,31 @@ const WorkScrollerText: React.FC<WorkScrollerTextProps> = ({
 
   return (
     <div className="left-side w-full h-min text-loading-container flex flex-row gap-3 md:gap-4 lg:gap-6 py-4">
-      {/* Loading bar for animation */}
-      <div
-        className="loading-bar-animation flex  min-w-[6px] rounded-[8px] "
-        style={{ backgroundColor: loadingBarBackgroundColor }}
-      >
-        <motion.div
-          className="loading-bar flex min-w-[6px] max-h-full rounded-[8px]"
-          style={{
-            backgroundColor: loadingBarColor,
-            height, // Motion value applied here
-          }}
-        >
-          <h1 className="text-[#cf105300]">d</h1>
-        </motion.div>
-      </div>
-
       {/* Text content */}
-      <div className="text-icons-container h-min flex flex-col gap-2 md:gap-4 lg:gap-6">
-        <div className="text-container">
-          <div className="text-white text-[clamp(24px,4vw,43px)] font-bold font-['Gabarito'] ">
-            {heading}
+      <div className="text-icons-container h-min flex flex-col gap-2 md:gap-4 lg:gap-6 h-full">
+        <div className="loading-text-contian flex flex-row gap-3 h-full md:gap-4 lg:gap-6 py-4">
+          {/* loading part */}
+          <div
+            className="loading-bar-animation flex h-full  min-w-[6px] rounded-[8px]  h-full bg-orange-400"
+            style={{ backgroundColor: loadingBarBackgroundColor }}
+          >
+            <motion.div
+              className="loading-bar flex min-w-[6px] h-full rounded-[8px]"
+              style={{
+                backgroundColor: loadingBarColor,
+              }}
+            >
+              <h1 className="text-[#cf105300]">d</h1>
+            </motion.div>
           </div>
-          <div className="self-stretch text-white text-[clamp(16px,3vw,28px)] font-normal font-['Gabarito'] ">
-            {content}
+          {/* text part */}
+          <div className="text-container ">
+            <div className="text-white text-[clamp(20px,3vw,36px)] font-bold font-['Gabarito'] ">
+              {heading}
+            </div>
+            <div className="self-stretch text-white text-[clamp(14px,3vw,22px)] font-normal font-['Gabarito'] ">
+              {content}
+            </div>
           </div>
         </div>
         <ItemComponent />
