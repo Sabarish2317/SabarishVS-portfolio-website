@@ -1,4 +1,5 @@
 import BouncingArrow from "@/components/animated components/BouncingArrow";
+import BentoBox from "@/components/bentoBox";
 import HeroSection from "@/components/HeroSection";
 import SubText from "@/components/SubText";
 import TopNavigationBar from "@/components/TopNavigationBar";
@@ -38,16 +39,16 @@ const HomePage: React.FC = () => {
       {/*  */}
       {/* main wrapper  */}
       {/*  */}
-      <div className="wrapper z-20 flex flex-col  items-center justify-center py-0 px-6 gap-6 w-full  max-w-[1490px]  mb-32 ">
+      <div className="wrapper z-20 flex flex-col  relative items-center justify-center py-0 px-6 gap-6 w-full  max-w-[1490px]  mb-32 ">
         <TopNavigationBar />
         <motion.li
           className="hero-section-animation list-none"
-          initial={{ scale: 0, opacity: 0 }} // Element is initially squeezed (converged)
-          animate={{ scale: 1, opacity: 100 }} // Animates to full width (normal)
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 100 }}
           transition={{
-            type: "easeinout", // You can change this to "ease" or others for different effects
-            stiffness: 300, // Controls the "spring" bounce effect
-            damping: 30, // Controls how much the spring slows down
+            type: "easeinout",
+            stiffness: 300,
+            damping: 30,
             duration: 1,
           }}
           children={<HeroSection />}
@@ -57,6 +58,7 @@ const HomePage: React.FC = () => {
         <SubText />
         <CanvasRevealEffectDemo />
         <WorksScroller />
+        {/* <BentoBox /> */}
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const WorkScrollerVideo: React.FC<WorkScrollerVideoProps> = ({ index }) => {
   };
 
   return (
-    <div className="right-side flex w-full h-full justify-center align-middle overflow-hidden">
+    <div className="right-side flex flex-col w-full h-full justify-center align-middle ">
       <video
         key={index}
         className="w-[100%] flex rounded-2xl object-cover"
