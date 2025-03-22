@@ -7,33 +7,23 @@ const Item1: React.FC = () => {
       <div className="icons-row flex flex-row gap-1 md:gap-3 lg:gap-4">
         {/* Icon */}
         <div className="icons flex flex-row gap-1 md:gap-2 items-center justify-start">
-          <img
+          {/* <img
             src="/icons/flutter-icon.svg"
             alt="flutter"
             className="transform scale-75 md:scale-90 lg:scale-100"
-          />
+          /> */}
           <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
             Flutter
           </div>
         </div>
         {/* Icon */}
         <div className="icons flex flex-row gap-1 md:gap-2 items-center">
-          <img
-            src="/icons/postgresql-icon.svg"
-            alt="PostgreSQL"
-            className="transform scale-75 md:scale-90 lg:scale-100"
-          />
           <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
             PostgreSQL
           </div>
         </div>
         {/* Icon */}
         <div className="icons flex flex-row gap-1 md:gap-2 items-center">
-          <img
-            src="/icons/mysql-icon.svg"
-            alt="MySQL"
-            className="transform scale-75 md:scale-90 lg:scale-100"
-          />
           <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
             MySQL
           </div>
@@ -50,35 +40,26 @@ const Item2: React.FC = () => {
       <div className="icons-row flex flex-row gap-1 md:gap-3 lg:gap-4">
         {/* Icon */}
         <div className="icons flex flex-row gap-1 md:gap-2 items-center justify-start">
-          <img
-            src="/icons/flutter-icon.svg"
-            alt="flutter"
-            className="transform scale-50 md:scale-75 lg:scale-90"  
-          />
           <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
-            Flutter
+            ReactJS
+          </div>
+          <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
+            NextJS
           </div>
         </div>
         {/* Icon */}
         <div className="icons flex flex-row gap-1 md:gap-2 items-center">
-          <img
-            src="/icons/postgresql-icon.svg"
-            alt="PostgreSQL"
-            className="transform scale-50 md:scale-75 lg:scale-90"
-          />
           <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
-            PostgreSQL
+            MongoDb
           </div>
         </div>
         {/* Icon */}
         <div className="icons flex flex-row gap-1 md:gap-2 items-center">
-          <img
-            src="/icons/mysql-icon.svg"
-            alt="MySQL"
-            className="transform scale-50 md:scale-75 lg:scale-90"
-          />
-          <div className="text-white/80 text-[clamp(14px,3vw,28px)] font-regular font-['Gabarito']">
-            MySQL
+          <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
+            NodeJS
+          </div>
+          <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
+            Tail-Wind CSS
           </div>
         </div>
       </div>
@@ -93,35 +74,20 @@ const Item3: React.FC = () => {
       <div className="icons-row flex flex-row gap-1 md:gap-3 lg:gap-4">
         {/* Icon */}
         <div className="icons flex flex-row gap-1 md:gap-2 items-center justify-start">
-          <img
-            src="/icons/flutter-icon.svg"
-            alt="flutter"
-            className="transform scale-75 md:scale-90 lg:scale-100"
-          />
-          <div className="text-white/80 text-[clamp(14px,3vw,28px)] font-regular font-['Gabarito']">
-            Flutter
+          <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
+            Figma
           </div>
         </div>
         {/* Icon */}
         <div className="icons flex flex-row gap-1 md:gap-2 items-center">
-          <img
-            src="/icons/postgresql-icon.svg"
-            alt="PostgreSQL"
-            className="transform scale-75 md:scale-90 lg:scale-100"
-          />
           <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
-            PostgreSQL
+            Responsive design
           </div>
         </div>
         {/* Icon */}
         <div className="icons flex flex-row gap-1 md:gap-2 items-center">
-          <img
-            src="/icons/mysql-icon.svg"
-            alt="MySQL"
-            className="transform scale-75 md:scale-90 lg:scale-100"
-          />
           <div className="text-white/80 text-[clamp(14px,3vw,22px)] font-regular font-['Gabarito']">
-            MySQL
+            Mobile & Web design system
           </div>
         </div>
       </div>

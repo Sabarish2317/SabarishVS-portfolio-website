@@ -1,7 +1,7 @@
 import BouncingArrow from "@/components/animated components/BouncingArrow";
 import BentoBox from "@/components/bentoBox";
 import HeroSection from "@/components/HeroSection";
-import SubText from "@/components/SubText";
+import { SubText, SubText2 } from "@/components/SubText";
 import TopNavigationBar from "@/components/TopNavigationBar";
 import { CanvasRevealEffectDemo } from "@/components/ui/CanvasRevealDemo";
 import WorksScroller from "@/components/workScroller/WorksScroller";
@@ -32,7 +32,7 @@ const HomePage: React.FC = () => {
         className="absolute z-10 inset-0 pointer-events-none opacity-50 mix-blend-multiply"
         style={{
           backgroundImage: "url('/icons/noise-overlay.png')",
-          backgroundSize: "cover",
+          backgroundSize: "fit",
           backgroundRepeat: "repeat",
         }}
       ></div>
@@ -58,7 +58,8 @@ const HomePage: React.FC = () => {
         <SubText />
         <CanvasRevealEffectDemo />
         <WorksScroller />
-        {/* <BentoBox /> */}
+        <SubText2 />
+        <BentoBox />
       </div>
     </div>
   );

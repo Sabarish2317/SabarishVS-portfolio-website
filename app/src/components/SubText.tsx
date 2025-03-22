@@ -36,4 +36,20 @@ const SubText: React.FC = () => {
   );
 };
 
-export default SubText;
+const SubText2: React.FC = () => {
+  return (
+    <div className="py-12 inline-flex flex-col justify-center items-start gap-10 font-['Gabarito'] leading-[33.60px]">
+      <div className="justify-center text-white text-3xl font-medium ">
+        I love crafting stunning apps and websites <br />
+        Blending creativity with seamless function.
+      </div>
+      <div className="justify-center text-white text-3xl font-medium flex ">
+        Bringing ideas to life with design and code,
+        <br />
+        Here's a glimpse of what I've built.
+      </div>
+    </div>
+  );
+};
+
+export { SubText, SubText2 };
