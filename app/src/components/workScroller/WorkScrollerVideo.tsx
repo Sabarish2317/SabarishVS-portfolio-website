@@ -17,10 +17,10 @@ const WorkScrollerVideo: React.FC<WorkScrollerVideoProps> = ({ index }) => {
   };
 
   return (
-    <div className="right-side flex flex-col w-full h-full justify-center align-middle ">
+    <div className="right-side flex flex-col w-full min-h-full justify-center align-middle ">
       <video
         key={index}
-        className="w-[100%] flex rounded-2xl object-cover"
+        className="w-[100%] flex h-full min-h-full rounded-2xl object-cover"
         autoPlay
         loop
         muted

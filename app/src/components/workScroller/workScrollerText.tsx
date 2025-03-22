@@ -4,6 +4,7 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 
 interface WorkScrollerTextProps {
   loadingBarColor: string;
+
   loadingBarBackgroundColor: string;
   heading: string;
   content: string;
@@ -27,57 +28,111 @@ const WorkScrollerText: React.FC<WorkScrollerTextProps> = ({
   const progressValue = useMotionValue(0);
 
   // Transform progress from [0, 100] to ["0%", "100%"]
-  const height = useTransform(progressValue, [0, 100], ["0%", "150%"]);
+  const height = useTransform(progressValue, [0, 100], ["0%", "100%"]);
 
   // Update progressValue when progress prop changes
   useEffect(() => {
     progressValue.set(parseInt(progress) || 0);
   }, [progress, progressValue]);
 
+  // Motion Variants for Enter & Exit Animations
+  const textVariants = {
+    hidden: { opacity: 0, y: 20 }, // Starts faded & shifted down
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    }, // Animates in
+    exit: { opacity: 0, y: -20, transition: { duration: 0.3, ease: "easeIn" } }, // Animates out
+  };
+
+  const barVariants = {
+    hidden: { scaleY: 0 },
+    visible: { scaleY: 1, transition: { duration: 0.5, ease: "easeOut" } },
+    exit: { scaleY: 0, transition: { duration: 0.3, ease: "easeIn" } },
+  };
+
   if (iscondensed) {
     return (
-      <div className="text-icons-container pl-4 h-min flex flex-col gap-2 md:gap-4 lg:gap-6  md:flex">
+      <motion.div
+        variants={textVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        className="text-icons-container h-min flex flex-col gap-2 md:gap-4 lg:gap-6"
+      >
         <div className="text-container">
-          <div className="text-[#c2b5cf3a] text-[clamp(22px,3.5vw,36px)] font-bold font-['Gabarito'] ">
+          <div className="text-[#c2b5cf3a] text-[clamp(22px,3.5vw,36px)] font-bold font-['Gabarito']">
             {heading}
           </div>
         </div>
-      </div>
+      </motion.div>
     );
   }
 
   return (
-    <div className="left-side w-full h-min text-loading-container flex flex-row gap-3 md:gap-4 lg:gap-6 py-4">
-      {/* Text content */}
-      <div className="text-icons-container h-min flex flex-col gap-2 md:gap-4 lg:gap-6 h-full">
-        <div className="loading-text-contian flex flex-row gap-3 h-full md:gap-4 lg:gap-6 py-4">
-          {/* loading part */}
-          <div
-            className="loading-bar-animation flex h-full  min-w-[6px] rounded-[8px]  h-full bg-orange-400"
+    <motion.div
+      variants={textVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className="left-side w-full h-min text-loading-container flex flex-row gap-3 md:gap-4 lg:gap-6 py-4"
+    >
+      {/* Loading bar for animation */}
+      <div className="text-icons-container h-min flex flex-col gap-2 md:gap-4 lg:gap-6">
+        <div className="text-and-loading-container flex flex-row gap-4">
+          {/* Animated Loading Bar */}
+          <motion.div
+            className="loading-bar-animation flex min-w-[6px] rounded-[8px] mt-4 origin-bottom"
             style={{ backgroundColor: loadingBarBackgroundColor }}
+            variants={barVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
           >
             <motion.div
-              className="loading-bar flex min-w-[6px] h-full rounded-[8px]"
+              className="loading-bar flex min-w-[6px] max-h-full rounded-[8px]"
               style={{
                 backgroundColor: loadingBarColor,
+                height, // Motion value applied here
               }}
+            />
+          </motion.div>
+
+          {/* Text Content */}
+          <div className="text-container">
+            <motion.div
+              variants={textVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              className="text-white text-[clamp(24px,4vw,43px)] font-bold font-['Gabarito']"
             >
-              <h1 className="text-[#cf105300]">d</h1>
+              {heading}
+            </motion.div>
+            <motion.div
+              variants={textVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              className="self-stretch text-white text-[clamp(16px,3vw,28px)] font-normal font-['Gabarito']"
+            >
+              {content}
             </motion.div>
           </div>
-          {/* text part */}
-          <div className="text-container ">
-            <div className="text-white text-[clamp(20px,3vw,36px)] font-bold font-['Gabarito'] ">
-              {heading}
-            </div>
-            <div className="self-stretch text-white text-[clamp(14px,3vw,22px)] font-normal font-['Gabarito'] ">
-              {content}
-            </div>
-          </div>
         </div>
-        <ItemComponent />
+
+        {/* Icon Component */}
+        <motion.div
+          variants={textVariants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+        >
+          <ItemComponent />
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
