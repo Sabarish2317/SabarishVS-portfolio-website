@@ -51,11 +51,20 @@ const SubText2: React.FC = () => {
     <div className="py-12 inline-flex flex-col justify-center items-start gap-10 font-['Gabarito'] leading-[33.60px]">
       <div className="justify-center text-white text-3xl font-regular ">
         I love crafting stunning apps and websites <br />
-        Blending creativity with seamless function.
+        Blending creativity with
+        <span className="justify-center text-[#ff5733] text-3xl ml-3 font-semibold  items-start gap-10 font-['Gabarito'] leading-[33.60px]">
+          seamless function.
+        </span>
       </div>
+    </div>
+  );
+};
+const SubText3: React.FC = () => {
+  return (
+    <div className="py-12 inline-flex flex-col justify-center items-start gap-10 font-['Gabarito'] leading-[33.60px]">
       <div className="justify-center text-white text-3xl font-regular flex flex-col justify-start items-start ">
         Bringing ideas to life with design and code,
-        <div className="justify-center text-[#D420B3] text-3xl font-bold flex ">
+        <div className="justify-center text-[#ff5733] text-3xl font-bold flex ">
           Here's a glimpse of what I've built.
         </div>
       </div>
@@ -63,4 +72,4 @@ const SubText2: React.FC = () => {
   );
 };
 
-export { SubText, SubText2 };
+export { SubText, SubText2, SubText3 };

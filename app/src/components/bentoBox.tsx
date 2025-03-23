@@ -16,7 +16,9 @@ const BentoBox: React.FC = () => {
             </h3>
           }
           githubLink={"https://github.com/Sabarish2317/BuyMyTix"}
-          figmaLink={""}
+          figmaLink={
+            "https://www.figma.com/design/B0yV8mexoHd8sdehMtqq6j/Personal-Project-ui-designs?node-id=0-1"
+          }
           imageUrl={"/buymytix.png"}
           logoUrl={"/icons/buymytix-logo.png"}
         />
@@ -30,7 +32,9 @@ const BentoBox: React.FC = () => {
             </h3>
           }
           githubLink={"https://github.com/Sabarish2317/MentorSquare_v0.3"}
-          figmaLink={""}
+          figmaLink={
+            "https://www.figma.com/design/B0yV8mexoHd8sdehMtqq6j/Personal-Project-ui-designs?node-id=1-3"
+          }
           imageUrl={"/mentorSquare.png"}
           logoUrl={"/icons/mentorsquare-logo.png"}
         />
@@ -46,7 +50,9 @@ const BentoBox: React.FC = () => {
             </h3>
           }
           githubLink={"https://github.com/Sabarish2317/Hoplite-workoutPlanner"}
-          figmaLink={""}
+          figmaLink={
+            "https://www.figma.com/design/B0yV8mexoHd8sdehMtqq6j/Personal-Project-ui-designs?node-id=1-2"
+          }
           imageUrl={"/hoplite.png"}
           logoUrl={"/icons/hoplite-logo.png"}
         />
@@ -60,7 +66,9 @@ const BentoBox: React.FC = () => {
             </h3>
           }
           githubLink={"https://github.com/Sabarish2317/stream-sync"}
-          figmaLink={""}
+          figmaLink={
+            "https://www.figma.com/design/B0yV8mexoHd8sdehMtqq6j/Personal-Project-ui-designs?node-id=1-5"
+          }
           imageUrl={"/stremSync.png"}
           logoUrl={"/icons/streamsync-logo.png"}
         />
@@ -130,6 +138,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </a>
         </div>
       </motion.div>
-    </motion.div>
+    </motion.div>   
   );
 };

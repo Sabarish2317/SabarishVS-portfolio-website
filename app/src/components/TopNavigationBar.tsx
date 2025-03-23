@@ -9,7 +9,7 @@ const TopNavigationBar: React.FC = () => {
       "mailto:sabarish_7@protonmail.com",
       "https://wa.me/+919344461476",
       "https://github.com/Sabarish2317",
-      "https://www.figma.com/design/B0yV8mexoHd8sdehMtqq6j/Personal-Project-ui-designs?node-id=1-5&t=Z39FzLgBIxOe31eW-1",
+      "https://www.figma.com/design/B0yV8mexoHd8sdehMtqq6j/Personal-Project-ui-designs?node-id=1-5",
     ];
     window.open(links[number], "_blank");
   };

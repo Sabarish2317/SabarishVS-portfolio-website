@@ -1,7 +1,7 @@
 import BouncingArrow from "@/components/animated components/BouncingArrow";
 import BentoBox from "@/components/bentoBox";
 import HeroSection from "@/components/HeroSection";
-import { SubText, SubText2 } from "@/components/SubText";
+import { SubText, SubText2, SubText3 } from "@/components/SubText";
 import TopNavigationBar from "@/components/TopNavigationBar";
 import { CanvasRevealEffectDemo } from "@/components/ui/CanvasRevealDemo";
 import WorksScroller from "@/components/workScroller/WorksScroller";
@@ -57,8 +57,9 @@ const HomePage: React.FC = () => {
         <BouncingArrow />
         <SubText />
         <CanvasRevealEffectDemo />
-        <WorksScroller />
         <SubText2 />
+        <WorksScroller />
+        <SubText3 />
         <BentoBox />
       </div>
     </div>
