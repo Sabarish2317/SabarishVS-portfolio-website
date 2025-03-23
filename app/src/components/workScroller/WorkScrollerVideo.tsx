@@ -13,7 +13,7 @@ const WorkScrollerVideo: React.FC<WorkScrollerVideoProps> = ({ index }) => {
       case 1:
         return "desktop compo.mp4";
       default:
-        return "/outline-icons/design com.mp4";
+        return "design com.mp4";
     }
   };
 
