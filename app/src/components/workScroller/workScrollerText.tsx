@@ -62,7 +62,7 @@ const WorkScrollerText: React.FC<WorkScrollerTextProps> = ({
         className="text-icons-container h-min flex flex-col gap-2 md:gap-4 lg:gap-6"
       >
         <div className="text-container">
-          <div className="text-[#c2b5cf3a] text-[clamp(22px,3.5vw,36px)] font-bold font-['Gabarito']">
+          <div className="text-[#c2b5cf3a] text-[clamp(16px,2.5vw,24px)] font-semibold font-['Gabarito']">
             {heading}
           </div>
         </div>

@@ -1,8 +1,18 @@
+import { motion } from "motion/react";
 import React from "react";
 
 const SubText: React.FC = () => {
   return (
-    <div className="py-8 flex-col justify-center items-start gap-[42px] inline-flex">
+    <motion.div
+      // initial={{ opacity: 0, y: -50 }}
+      // animate={{ opacity: 1, y: 0 }}
+      // transition={{
+      //   duration: 0.3,
+      //   delay: 1,
+      //   ease: "easeOut",
+      // }}
+      className="py-8 flex-col justify-center items-start gap-[42px] inline-flex mt-8"
+    >
       <div className="text-white text-[28px] font-medium font-['Gabarito'] leading-[33.60px]">
         I thrive on mastering my craft while
         <br />
@@ -14,39 +24,40 @@ const SubText: React.FC = () => {
           <br />
           it counts. I will{" "}
         </span>
-        <span className="text-white text-[28px] font-extrabold font-['Gabarito'] leading-[33.60px]">
+        <span className="text-[#ff5733] text-[28px] font-extrabold font-['Gabarito'] leading-[33.60px]">
           Design
         </span>
         <span className="text-white text-[28px] font-medium font-['Gabarito'] leading-[33.60px]">
           ,{" "}
         </span>
-        <span className="text-white text-[28px] font-bold font-['Gabarito'] leading-[33.60px]">
+        <span className="text-[#ff5733] text-[28px] font-bold font-['Gabarito'] leading-[33.60px]">
           Develop
         </span>
         <span className="text-white text-[28px] font-medium font-['Gabarito'] leading-[33.60px]">
           {" "}
           &
         </span>
-        <span className="text-white text-[28px] font-bold font-['Gabarito'] leading-[33.60px]">
+        <span className="text-[#ff5733] text-[28px] font-bold font-['Gabarito'] leading-[33.60px]">
           {" "}
           Deliver
         </span>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
 const SubText2: React.FC = () => {
   return (
     <div className="py-12 inline-flex flex-col justify-center items-start gap-10 font-['Gabarito'] leading-[33.60px]">
-      <div className="justify-center text-white text-3xl font-medium ">
+      <div className="justify-center text-white text-3xl font-regular ">
         I love crafting stunning apps and websites <br />
         Blending creativity with seamless function.
       </div>
-      <div className="justify-center text-white text-3xl font-medium flex ">
+      <div className="justify-center text-white text-3xl font-regular flex flex-col justify-start items-start ">
         Bringing ideas to life with design and code,
-        <br />
-        Here's a glimpse of what I've built.
+        <div className="justify-center text-[#D420B3] text-3xl font-bold flex ">
+          Here's a glimpse of what I've built.
+        </div>
       </div>
     </div>
   );
