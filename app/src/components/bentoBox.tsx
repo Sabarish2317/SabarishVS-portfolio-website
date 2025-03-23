@@ -90,12 +90,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <motion.div
-      className="element-container flex relative overflow-hidden"
+      className="element-container flex relative rounded-lg overflow-hidden"
       whileHover={{ scale: 1.02 }}
     >
       {/* Background Image */}
-      <img
-        className="min-w-full rounded-lg overflow-clip"
+      <motion.img
+        className="w-full fit origin-right"
         src={imageUrl}
         alt="project"
       />
@@ -105,7 +105,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         className="floating-details-container rounded-lg overflow-clip w-full h-full bg-black absolute bottom-0 left-0 px-8 py-8 flex flex-col justify-end items-start gap-3"
         initial={{ opacity: 0, y: 50 }}
         whileHover={{ opacity: 1, y: 0, backgroundColor: "rgba(0, 0, 0, 0.9)" }}
-        transition={{ duration: 0.4, ease: "easeInOut" }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
       >
         <img src={logoUrl} alt="logo" />
         <h3 className="text-white text-xl font-light font-['Gabarito'] leading-relaxed">
