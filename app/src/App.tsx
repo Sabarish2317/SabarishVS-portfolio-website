@@ -3,9 +3,9 @@ import ScrollProgress from "./pages/scrollBar";
 
 function App() {
   return (
-    <div className="mx-auto">
+    <div className="h-min ">
       <HomePage />
-      <ScrollProgress /> // Horizontal scroll bar
+      <ScrollProgress />
     </div>
   );
 }

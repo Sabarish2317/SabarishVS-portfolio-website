@@ -1,7 +1,10 @@
 import BouncingArrow from "@/components/animated components/BouncingArrow";
 import BentoBox from "@/components/bentoBox";
+import Carousel from "@/components/carousel";
+import Footer from "@/components/footer";
 import HeroSection from "@/components/HeroSection";
 import { SubText, SubText2, SubText3 } from "@/components/SubText";
+import TandC from "@/components/TandC";
 import TopNavigationBar from "@/components/TopNavigationBar";
 import { CanvasRevealEffectDemo } from "@/components/ui/CanvasRevealDemo";
 import WorksScroller from "@/components/workScroller/WorksScroller";
@@ -15,7 +18,7 @@ const HomePage: React.FC = () => {
     // Main section
     //
     <div
-      className="main-frame w-full flex-col justify-start items-center inline-flex relative overflow-clip "
+      className="main-frame w-full flex-col justify-start items-center flex relative overflow-clip "
       style={{
         background:
           "linear-gradient(to bottom, #1b0033 0px, #1b0033 100px , #4c1289 50%)",
@@ -39,7 +42,7 @@ const HomePage: React.FC = () => {
       {/*  */}
       {/* main wrapper  */}
       {/*  */}
-      <div className="wrapper z-20 flex flex-col  relative items-center justify-center py-0 px-6 gap-6 w-full  max-w-[1490px]  mb-32 ">
+      <div className="wrapper z-20 flex flex-col  relative items-center justify-center py-0 px-6 gap-6 w-full  max-w-[1490px]">
         <TopNavigationBar />
         <motion.li
           className="hero-section-animation list-none"
@@ -53,7 +56,6 @@ const HomePage: React.FC = () => {
           }}
           children={<HeroSection />}
         />
-
         <BouncingArrow />
         <SubText />
         <CanvasRevealEffectDemo />
@@ -61,6 +63,26 @@ const HomePage: React.FC = () => {
         <WorksScroller />
         <SubText3 />
         <BentoBox />
+        <div className="carousels-container relative h-[300px] w-screen flex justify-start items-center">
+          {/* First Carousel - Rotated Right */}
+          <Carousel
+            className="bg-[#F42584] rotate-45 absolute top-[-40%] -left-1/4"
+            start="0%"
+            end="-100%"
+            transform="rotate(8deg)"
+          />
+
+          {/* Second Carousel - Rotated Left */}
+          <Carousel
+            className="bg-[#564BBD] -rotate-12 absolute top-[-40%] left-1/4"
+            start="-100%"
+            end="0%"
+            transform="rotate(-8deg)"
+          />
+        </div>
+        <Footer />
+        <div className="divider self-stretch h-0 rounded-lg outline outline-1  outline-white/30  my-4"></div>
+        <TandC />
       </div>
     </div>
   );
