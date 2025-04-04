@@ -6,13 +6,15 @@ const TandC: React.FC = () => {
       {/* Terms & Privacy Links */}
       <div className="flex justify-start items-center gap-10">
         <a
-          href="/terms"
+          href="https://github.com/Sabarish2317/SabarishVS-portfolio-website/blob/main/README.md"
+          target="_blank"
           className="text-slate-50 text-opacity-40 text-2xl font-medium font-['Gabarito'] leading-7 hover:text-opacity-70 transition"
         >
           Terms & Conditions
         </a>
         <a
-          href="/privacy"
+          target="_blank"
+          href="https://github.com/Sabarish2317/SabarishVS-portfolio-website/blob/main/README.md"
           className="text-slate-50 text-opacity-40 text-2xl font-medium font-['Gabarito'] leading-7 hover:text-opacity-70 transition"
         >
           Privacy Policy

@@ -32,7 +32,7 @@ const WorksScroller: React.FC = () => {
       ref={scrollRef}
       className="scroll-container h-[3000px] flex justify-start items-start relative "
     >
-      <div className="works-scroller-container w-full overflow-clip pt-6 gap-6 items-start flex flex-col lg:flex-row my-11 sticky top-32 ">
+      <div className="works-scroller-container w-full overflow-clip pt-6 gap-2 md:gap-6 items-start flex flex-col lg:flex-row my-11 sticky top-32 ">
         {/* list of elements with individual videos */}
         <div className="list-column flex flex-col gap-0 w-full h-min ">
           {/* Element 1 */}

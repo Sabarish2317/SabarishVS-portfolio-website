@@ -42,7 +42,7 @@ const HeroSection: React.FC = () => {
             <div className="text-white text-[clamp(48px,10vw,82px)] font-medium font-clash leading-[clamp(40px,8vw,81px)]">
               Sabarish V S
             </div>
-            <div className="text-center text-[#d1a9f3]/90 text-[clamp(16px,4vw,32px)] py-1 font-medium font-['Clash Display Variable'] leading-[clamp(24px,4vw,34px)] w-auto">
+            <div className="text-center text-[#d1a9f3]/90 text-[clamp(16px,4vw,32px)] py-2 font-medium font-['Clash Display Variable'] leading-[clamp(24px,4vw,34px)] w-auto">
               A full stack App & Web developer <br /> based in Tamil Nadu,
               India.
             </div>
@@ -68,7 +68,7 @@ const HeroSection: React.FC = () => {
                 link.click();
                 document.body.removeChild(link);
               }}
-              className="w-full sm:w-auto px-6 py-4 bg-[#6a1da0] rounded-lg shadow-[0px_0px_6.7px_0px_rgba(83,12,129,1.00)] border-2 border-[#3a0261] justify-center items-center gap-2.5  inline-flex md:w-full lg:w-full
+              className="w-full sm:w-auto px-6 py-4 bg-[#6e4aee] rounded-lg shadow-[0px_0px_6.7px_0px_rgba(83,12,129,1.00)] border-2 border-[#3a0261] justify-center items-center gap-2.5  inline-flex md:w-full lg:w-full
                transition-all duration-300 ease-in-out hover:scale-105 active:scale-110 scale-3d"
             >
               <h3 className="text-white text-[clamp(14px,5vw,24px)] font-medium font-['Gabarito'] leading-[clamp(18px,3vw,28px)]">
@@ -79,7 +79,7 @@ const HeroSection: React.FC = () => {
               onClick={() => {
                 window.scrollTo({ top: 400, behavior: "smooth" });
               }}
-              className="w-full sm:w-auto px-6 py-4 bg-[#1a0037] rounded-lg shadow-[0px_0px_6.7px_0px_rgba(83,12,129,1.00)] border border-[#741ccb] justify-center items-center gap-2.5  inline-flex md:w-full lg:w-full
+              className="w-full sm:w-auto px-6 py-4 bg-[#1a0037] rounded-lg shadow-[0px_0px_6.7px_0px_rgba(83,12,129,1.00)] border border-[#7C5EEA] justify-center items-center gap-2.5  inline-flex md:w-full lg:w-full
              transition-all duration-300 ease-in-out hover:scale-105 active:scale-110 scale-3d"
             >
               <h3 className="text-white text-[clamp(14px,5vw,24px)] font-medium font-['Gabarito'] leading-[clamp(18px,3vw,28px)]">

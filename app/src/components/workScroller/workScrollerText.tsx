@@ -62,7 +62,7 @@ const WorkScrollerText: React.FC<WorkScrollerTextProps> = ({
         className="text-icons-container h-min flex flex-col gap-2 md:gap-4 lg:gap-6"
       >
         <div className="text-container">
-          <div className="text-[#c2b5cf3a] text-[clamp(16px,2.5vw,24px)] font-semibold font-['Gabarito']">
+          <div className="text-[#c2b5cf3a] text-[clamp(24px,5vw,32px)] font-semibold font-['Gabarito']">
             {heading}
           </div>
         </div>
@@ -94,7 +94,7 @@ const WorkScrollerText: React.FC<WorkScrollerTextProps> = ({
               className="loading-bar flex min-w-[6px] max-h-full rounded-[8px]"
               style={{
                 backgroundColor: loadingBarColor,
-                height, // Motion value applied here
+                height,
               }}
             />
           </motion.div>
@@ -106,7 +106,7 @@ const WorkScrollerText: React.FC<WorkScrollerTextProps> = ({
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="text-white text-[clamp(24px,4vw,43px)] font-bold font-['Gabarito']"
+              className="text-white text-[clamp(28px,6vw,38px)] font-bold font-['Gabarito']"
             >
               {heading}
             </motion.div>
@@ -115,7 +115,7 @@ const WorkScrollerText: React.FC<WorkScrollerTextProps> = ({
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="self-stretch text-white text-[clamp(16px,3vw,28px)] font-normal font-['Gabarito']"
+              className="self-stretch text-white text-[clamp(18px,4.5vw,28px)] font-normal font-['Gabarito']"
             >
               {content}
             </motion.div>

@@ -21,7 +21,7 @@ const HomePage: React.FC = () => {
       className="main-frame w-full flex-col justify-start items-center flex relative overflow-clip "
       style={{
         background:
-          "linear-gradient(to bottom, #1b0033 0px, #1b0033 100px , #4c1289 50%)",
+          "linear-gradient(to bottom, #140741 0px, #1F1150 100px , #45318F   50%)",
       }}
     >
       {/*  */}
@@ -42,10 +42,10 @@ const HomePage: React.FC = () => {
       {/*  */}
       {/* main wrapper  */}
       {/*  */}
-      <div className="wrapper z-20 flex flex-col  relative items-center justify-center py-0 px-6 gap-6 w-full  max-w-[1490px]">
+      <div className="wrapper z-20 flex flex-col  select-none relative items-center justify-center py-0 px-2 md:px-4 lg:px-6 gap-6 w-full  max-w-[1490px]">
         <TopNavigationBar />
         <motion.li
-          className="hero-section-animation list-none"
+          className="hero-section-animation list-none mt-8"
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 100 }}
           transition={{
@@ -63,10 +63,10 @@ const HomePage: React.FC = () => {
         <WorksScroller />
         <SubText3 />
         <BentoBox />
-        <div className="carousels-container relative h-[300px] w-screen flex justify-start items-center">
+        <div className="carousels-container relative h-[300px] scale-75 md:scale-100 w-screen flex justify-start items-center">
           {/* First Carousel - Rotated Right */}
           <Carousel
-            className="bg-[#F42584] rotate-45 absolute top-[-40%] -left-1/4"
+            className="bg-[#F42584] rotate-45 absolute  top-[-40%] -left-1/4"
             start="0%"
             end="-100%"
             transform="rotate(8deg)"
