@@ -134,11 +134,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         }}
         transition={{ duration: 0.2, ease: "easeInOut" }}
       >
-        <img src={logoUrl} alt="logo" />
+        <img
+          className="scale-75 md:scale-100 origin-left"
+          src={logoUrl}
+          alt="logo"
+        />
         <h3 className="text-white  font-light font-['Gabarito'] leading-relaxed">
           {description}
         </h3>
-        <div className="links-container flex flex-row gap-4 ">
+        <div className="links-container flex flex-row gap-4">
           <a
             href={githubLink}
             target="_blank"

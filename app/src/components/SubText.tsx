@@ -61,8 +61,8 @@ const SubText2: React.FC = () => {
 };
 const SubText3: React.FC = () => {
   return (
-    <div className="py-12 inline-flex flex-col justify-center items-start gap-10 font-['Gabarito'] leading-[33.60px]">
-      <div className="justify-center text-white text-[clamp(24px,5vw,32px)] font-regular flex flex-col justify-start items-start ">
+    <div className="py-12 px-4 inline-flex flex-col justify-center items-start gap-10 font-['Gabarito'] leading-[33.60px]">
+      <div className="text-white text-[clamp(24px,5vw,32px)] font-regular flex flex-col justify-start items-start ">
         Bringing ideas to life with design and code,
         <div className="justify-center text-[#ff5733] text-[clamp(24px,5vw,32px)] font-bold flex ">
           Here's a glimpse of what I've built.

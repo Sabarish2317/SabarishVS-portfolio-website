@@ -29,7 +29,7 @@ const WorkScrollerVideo: React.FC<WorkScrollerVideoProps> = ({ index }) => {
           transition={{ duration: 0.2, ease: "easeInOut" }}
         >
           <video
-            className="w-[100%] h-full min-h-full rounded-2xl object-cover"
+            className="w-[100%] h-full min-h-full rounded-2xl object-cover px-1.5"
             autoPlay
             loop
             muted

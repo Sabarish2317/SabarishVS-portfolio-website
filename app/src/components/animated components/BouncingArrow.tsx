@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 const BouncingArrow = () => {
   return (
     <motion.div
+      onClick={() => window.scrollTo({ top: 600, behavior: "smooth" })}
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
@@ -10,7 +11,7 @@ const BouncingArrow = () => {
         delay: 1.6,
         ease: "easeOut",
       }}
-      className="motion div"
+      className="motion div hover:scale-110 cursor-pointer mb-4"
     >
       <motion.img
         src="/icons/down-arrow.svg"

@@ -44,19 +44,21 @@ const HomePage: React.FC = () => {
       {/*  */}
       <div className="wrapper z-20 flex flex-col  select-none relative items-center justify-center py-0 px-2 md:px-4 lg:px-6 gap-6 w-full  max-w-[1490px]">
         <TopNavigationBar />
-        <motion.li
-          className="hero-section-animation list-none mt-8"
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 100 }}
-          transition={{
-            type: "easeinout",
-            stiffness: 300,
-            damping: 30,
-            duration: 1,
-          }}
-          children={<HeroSection />}
-        />
-        <BouncingArrow />
+        <div className="container flex flex-col w-full min-h-1/3 md:min-h-screen self-center items-center gap-8 justify-center">
+          <motion.li
+            className="hero-section-animation list-none mt-8"
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 100 }}
+            transition={{
+              type: "easeinout",
+              stiffness: 300,
+              damping: 30,
+              duration: 1,
+            }}
+            children={<HeroSection />}
+          />
+          <BouncingArrow />
+        </div>
         <SubText />
         <CanvasRevealEffectDemo />
         <SubText2 />
