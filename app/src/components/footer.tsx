@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
         <div className="w-full social-link-row flex self-center flex-row scale-3d scale-  md:scale-100 justify-center items-end gap-3">
           {/* figma */}
           <button
-            onClick={() => handleClick(4)}
+            onClick={() => handleClick(0)}
             className="social-button border-2 min-w-max bg-white/5  border-[#7C5EEA]/50 backdrop-blur-[35.70px] px-2.5 py-2.5  rounded-[21px]
         transition-all duration-300 ease-in-out hover:scale-105 active:scale-110 scale-3d  active:bg-white/[0.3]"
           >
@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
           </button>
           {/* linkedin */}
           <button
-            onClick={() => handleClick(0)}
+            onClick={() => handleClick(1)}
             className="social-button border-2 bg-white/5  border-[#7C5EEA]/50 backdrop-blur-[35.70px] px-2.5 py-2.5  rounded-[21px]
         transition-all duration-300 ease-in-out hover:scale-105 active:scale-110 scale-3d  active:bg-white/[0.3] min-w-max"
           >
@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
           </button>
           {/* proton mail */}
           <button
-            onClick={() => handleClick(1)}
+            onClick={() => handleClick(2)}
             className="social-button border-2 bg-white/5 border-[#7C5EEA]/50 backdrop-blur-[35.70px] px-2.5 py-2.5 rounded-[21px] 
         transition-all duration-300 ease-in-out active:bg-white/[0.2] hover:scale-105 active:scale-110 scale-3d min-w-max"
           >
@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
           </button>
           {/* whatsapp */}
           <button
-            onClick={() => handleClick(2)}
+            onClick={() => handleClick(3)}
             className="social-button border-2 bg-white/5 border-[#7C5EEA]/50 backdrop-blur-[35.70px] px-2.5 py-2.5 rounded-[21px] 
         transition-all duration-300 ease-in-out active:bg-white/[0.2] hover:scale-105 active:scale-110 scale-3d min-w-max"
           >
@@ -128,7 +128,7 @@ const Footer: React.FC = () => {
           </button>
           {/* github */}
           <button
-            onClick={() => handleClick(3)}
+            onClick={() => handleClick(4)}
             className="social-button  border-2 bg-white/5 border-[#7C5EEA]/50 backdrop-blur-[35.70px] px-2.5 py-2.5 rounded-[21px] 
         transition-all duration-300 ease-in-out active:bg-white/[0.2] hover:scale-105 active:scale-110 scale-3d min-w-max"
           >
